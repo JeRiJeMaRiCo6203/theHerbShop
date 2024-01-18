@@ -11,7 +11,11 @@
         },
         { "src":"/css/(.*)","dest":"/public/css/"},
         { "src":"/js/(.*)","dest":"/public/js/"},
-        { "src":"/img/(.*)","dest":"/public/img/"}
+        { "src":"/img/(.*)","dest":"/public/img/"},
+        { "src":"/img/herbs/(.*)","dest":"/public/img/herbs"},
+        { "src":"/img/icon/(.*)","dest":"/public/img/icon"},
+        { "src":"/img/login/(.*)","dest":"/public/img/login"},
+        { "src":"/img/register/(.*)","dest":"/public/img/register"}
         
     ],
     "env": {
