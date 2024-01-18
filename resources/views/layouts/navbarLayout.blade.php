@@ -21,7 +21,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
     <title>The Herb Shop &copy;</title>
 </head>
 
@@ -65,16 +65,16 @@
             <div class="dropdown__footer-container">
                 <div class="dropdown__footer-content">
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_instagram-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_instagram-fill.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/twitter-icon.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/twitter-icon.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_linkedin-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_linkedin-fill.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_discord-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_discord-fill.png') }}" alt="" class="footer__icon">
                     </a>
                 </div>
 
@@ -88,7 +88,7 @@
         </div>
     </div>
 
-    <script src="{{ asset('js/navbar.js') }}"></script>
+    <script src="{{ secure_asset('js/navbar.js') }}"></script>
 
     <!--=============== BOOTSTRAP JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

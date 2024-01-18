@@ -49,9 +49,9 @@ onclick="addToCart(this)" data-herb-id="{{ $herbsDetail->herbsId }}" data-herb-i
             if (imgElement) {
                 @if (session('status') == 'favorited')
                     console.log(session('status'))
-                    imgElement.src = "{{ asset('img/icon/favoriteSelected.svg') }}";
+                    imgElement.src = "{{ secure_asset('img/icon/favoriteSelected.svg') }}";
                 @elseif (session('status') == 'unfavorited')
-                    imgElement.src = "{{ asset('img/icon/favorite.svg') }}";
+                    imgElement.src = "{{ secure_asset('img/icon/favorite.svg') }}";
                 @endif
             }
         });

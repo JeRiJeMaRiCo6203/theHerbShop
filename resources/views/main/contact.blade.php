@@ -17,11 +17,11 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/landing-page.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/contact-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/contact-page.css') }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
     <title>The Herb Shop &copy;</title>
 </head>
@@ -70,7 +70,7 @@
         <div class="contact__page-content">
             <div class="contact__page-left">
                 <div class="contact__page-image">
-                    <img src="{{ asset('img/contact-img.png') }}" alt="" class="contact__page-img">
+                    <img src="{{ secure_asset('img/contact-img.png') }}" alt="" class="contact__page-img">
                 </div>
             </div>
 
@@ -113,10 +113,10 @@
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="{{ asset('js/landing-page.js') }}"></script>
+    <script src="{{ secure_asset('js/landing-page.js') }}"></script>
 
     <!--=============== BOOTSTRAP JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

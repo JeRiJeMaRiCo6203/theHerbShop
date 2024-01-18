@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/landing-page.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/account.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/account.css') }}">
 
     <!--=============== BOOTSTRAP ERROR HANDLER ===============-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
     <title>The Herb Shop &copy;</title>
 </head>
@@ -484,7 +484,7 @@
         </div>
         </div>
     </main>
-    <img src="{{ asset('img/bottom-account.png') }}" alt="" class="img-account-bottom">
+    <img src="{{ secure_asset('img/bottom-account.png') }}" alt="" class="img-account-bottom">
 
     <!--==================== DELETE CONFIRMATION ====================-->
     <div class="modal fade" id="deleteConfirmationModal" tabindex="-1" role="dialog"
@@ -513,7 +513,7 @@
     @include('layouts.footerLayout')
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
     <!--=============== BOOTSTRAP JS ===============-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -525,7 +525,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('js/account.js') }}"></script>
+    <script src="{{ secure_asset('js/account.js') }}"></script>
     <script>
         function toggleDiv(divId) {
             var divs = ['details', 'favorites', 'history', 'settings'];
@@ -574,14 +574,14 @@
             if (removeFromFavoritesAction && removeFromFavoritesAction.herbsId === herbsId) {
                 localStorage.removeItem(localStorageKey);
                 var imgElement = $('#favoritesItem-' + herbsId).find('.favoriteImg');
-                imgElement.attr('src', "{{ asset('img/icon/favoriteSelected.svg') }}");
+                imgElement.attr('src', "{{ secure_asset('img/icon/favoriteSelected.svg') }}");
             } else {
                 console.log("Removing from favorites. HerbsId:", herbsId);
                 localStorage.setItem(localStorageKey, JSON.stringify({
                     herbsId: herbsId
                 }));
                 var imgElement = $('#favoritesItem-' + herbsId).find('.favoriteImg');
-                imgElement.attr('src', "{{ asset('img/icon/favorite.svg') }}");
+                imgElement.attr('src', "{{ secure_asset('img/icon/favorite.svg') }}");
             }
         @else
             window.location.href = "{{ route('login') }}";

@@ -17,7 +17,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
 
     <title>The Herb Shop &copy;</title>
 </head>
@@ -52,16 +52,16 @@
             <div class="footer__icon-container">
                 <div class="footer__icon-content">
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_instagram-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_instagram-fill.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/twitter-icon.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/twitter-icon.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_linkedin-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_linkedin-fill.png') }}" alt="" class="footer__icon">
                     </a>
                     <a href="" class="footer__icon-link">
-                        <img src="{{ asset('img/icon/ri_discord-fill.png') }}" alt="" class="footer__icon">
+                        <img src="{{ secure_asset('img/icon/ri_discord-fill.png') }}" alt="" class="footer__icon">
                     </a>
                 </div>
 

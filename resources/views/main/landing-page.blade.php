@@ -17,9 +17,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/landing-page.css') }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -113,7 +113,7 @@
         <section class="new__collection section darkSection" id="new-collection">
             <!--==================== LEFT ====================-->
             <div class="newcollect__left-container">
-                <img src="{{ asset('img/newcollect-pict.png') }}" alt="">
+                <img src="{{ secure_asset('img/newcollect-pict.png') }}" alt="">
             </div>
 
             <!--==================== RIGHT ====================-->
@@ -151,7 +151,7 @@
             <div class="collection__big-container">
                 <div class="collection__container">
                     <div class="collection__image">
-                        <img src="{{ asset('img/collection-exotic.png') }}" alt="" class="collection__img">
+                        <img src="{{ secure_asset('img/collection-exotic.png') }}" alt="" class="collection__img">
                     </div>
 
                     <div class="collection__text">
@@ -178,7 +178,7 @@
 
                 <div class="collection__container">
                     <div class="collection__image">
-                        <img src="{{ asset('img/collection-swiftgrow.png') }}" alt="" class="collection__img">
+                        <img src="{{ secure_asset('img/collection-swiftgrow.png') }}" alt="" class="collection__img">
                     </div>
 
 
@@ -209,7 +209,7 @@
 
                 <div class="collection__container">
                     <div class="collection__image">
-                        <img src="{{ asset('img/collection-alchemical.png') }}" alt=""
+                        <img src="{{ secure_asset('img/collection-alchemical.png') }}" alt=""
                             class="collection__img">
                     </div>
 
@@ -251,7 +251,7 @@
                 </div>
 
                 <div class="carousel-inner">
-                    <img src="{{ asset('img/testimony-pict.png') }}" class="carousel-img d-block w-100"
+                    <img src="{{ secure_asset('img/testimony-pict.png') }}" class="carousel-img d-block w-100"
                         id="testimony__carousel-img-1" alt="...">
                     <div class="carousel-item active">
                         <div class="carousel-caption d-none d-md-block" id="bs__overides-carousel-caption-1">
@@ -303,7 +303,7 @@
         <!--==================== ADVANTAGES ====================-->
         <section class="advantages section" id="advantages">
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_phone-call.png') }}" alt=""
+                <img src="{{ secure_asset('img/icon/lucide_phone-call.png') }}" alt=""
                     class="advantages__icon-img">
 
                 <div class="advantages__title">
@@ -317,7 +317,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_truck.png') }}" alt="" class="advantages__icon-img">
+                <img src="{{ secure_asset('img/icon/lucide_truck.png') }}" alt="" class="advantages__icon-img">
 
                 <div class="advantages__title">
                     Free Shipping
@@ -330,7 +330,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_badge-check.png') }}" alt=""
+                <img src="{{ secure_asset('img/icon/lucide_badge-check.png') }}" alt=""
                     class="advantages__icon-img">
 
                 <div class="advantages__title">
@@ -344,7 +344,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_award.png') }}" alt="" class="advantages__icon-img">
+                <img src="{{ secure_asset('img/icon/lucide_award.png') }}" alt="" class="advantages__icon-img">
 
                 <div class="advantages__title">
                     Awards Winning
@@ -360,7 +360,7 @@
         <section class="ourStory section" id="ourStory">
             <div class="ourStory__container">
                 <div class="ourStory__left-container">
-                    <img src="{{ asset('img/ourStory-pict.png') }}" alt="" class="ourStory__img">
+                    <img src="{{ secure_asset('img/ourStory-pict.png') }}" alt="" class="ourStory__img">
 
                     <div class="ourStory__shop-name">
                         <svg viewbox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -441,7 +441,7 @@
     </a>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="{{ secure_asset('js/landing-page.js') }}"></script>

@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/product-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/product-page.css') }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
     <!--=============== BOOTSTRAP ERROR HANDLER ===============-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -205,7 +205,7 @@
         </div>
         <section class="advantages">
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_phone-call.png') }}" alt=""
+                <img src="{{ secure_asset('img/icon/lucide_phone-call.png') }}" alt=""
                     class="advantages__icon-img">
 
                 <div class="advantages__title">
@@ -219,7 +219,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_truck.png') }}" alt="" class="advantages__icon-img">
+                <img src="{{ secure_asset('img/icon/lucide_truck.png') }}" alt="" class="advantages__icon-img">
 
                 <div class="advantages__title">
                     Free Shipping
@@ -232,7 +232,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_badge-check.png') }}" alt=""
+                <img src="{{ secure_asset('img/icon/lucide_badge-check.png') }}" alt=""
                     class="advantages__icon-img">
 
                 <div class="advantages__title">
@@ -246,7 +246,7 @@
             </div>
 
             <div class="advantages__container">
-                <img src="{{ asset('img/icon/lucide_award.png') }}" alt="" class="advantages__icon-img">
+                <img src="{{ secure_asset('img/icon/lucide_award.png') }}" alt="" class="advantages__icon-img">
 
                 <div class="advantages__title">
                     Awards Winning
@@ -317,9 +317,9 @@
 
                     var imgElement = document.getElementById('favoriteImage');
                     if (data.status === 'favorited') {
-                        imgElement.src = "{{ asset('img/icon/favoriteSelected.svg') }}";
+                        imgElement.src = "{{ secure_asset('img/icon/favoriteSelected.svg') }}";
                     } else if (data.status === 'unfavorited') {
-                        imgElement.src = "{{ asset('img/icon/favorite.svg') }}";
+                        imgElement.src = "{{ secure_asset('img/icon/favorite.svg') }}";
                     }
 
                     window.location.href = "{{ route('show', ['id' => $herbsDetail->herbsId]) }}";
@@ -337,13 +337,13 @@
 
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
     <!--=============== LOCAL STORAGE ===============-->
-    <script src="{{ asset('js/addHerbsToCart.js') }}"></script>
+    <script src="{{ secure_asset('js/addHerbsToCart.js') }}"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="{{ asset('js/landing-page.js') }}"></script>
+    <script src="{{ secure_asset('js/landing-page.js') }}"></script>
 
     <!--=============== BOOTSTRAP JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

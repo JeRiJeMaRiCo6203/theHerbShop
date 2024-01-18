@@ -16,10 +16,10 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/herbs-page.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/herbs-page.css') }}">
 
-        <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
         <title>The Herb Shop &copy;</title>
     </head>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="text-center mb-4">
-                                    <img src="{{asset('img/icon/smile.svg')}}" alt="">
+                                    <img src="{{secure_asset('img/icon/smile.svg')}}" alt="">
                                     {{-- <span class="fa-stack fa-4x text-green-600">
                                         
                                         <i class="fas fa-circle fa-stack-2x text-success"></i>
@@ -196,10 +196,10 @@
         </a>
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+        <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src="{{ asset('js/landing-page.js') }}"></script>
+        <script src="{{ secure_asset('js/landing-page.js') }}"></script>
 
         <!--=============== BOOTSTRAP JS ===============-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

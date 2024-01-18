@@ -11,12 +11,12 @@
 
     <!--=============== CSS ===============-->
 
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/loginregister.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/landing-page.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/carts.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/loginregister.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/landing-page.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/carts.css') }}">
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('img/Logo1.svg') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ secure_asset('img/Logo1.svg') }}" />
 
     <title>The Herb Shop &copy;</title>
 
@@ -85,7 +85,7 @@
                                     € {{ number_format($cart->herbPrice) }}
                                 </p>
                                 <div>
-                                    <img class="item__remove" src="{{ asset('img/icon/removeCart.svg') }}"
+                                    <img class="item__remove" src="{{ secure_asset('img/icon/removeCart.svg') }}"
                                         onclick="removeFromCarts({{ $cart->cartsId ?? null }});">
                                 </div>
                             </div>
@@ -259,10 +259,10 @@
     </script>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src="{{ asset('js/scrollreveal.min.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.min.js') }}"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="{{ asset('js/landing-page.js') }}"></script>
+    <script src="{{ secure_asset('js/landing-page.js') }}"></script>
 
 
     <script>
@@ -386,11 +386,11 @@
                     // var pElement = $('#cartItem-' + cartsId).find('.favoriteText');
                     if (data.status === 'favorited') {
 
-                        imgElement.attr('src', "{{ asset('img/icon/favoriteSelected.svg') }}");
+                        imgElement.attr('src', "{{ secure_asset('img/icon/favoriteSelected.svg') }}");
                         // pElement.css('color', 'black');
                     } else if (data.status === 'unfavorited') {
 
-                        imgElement.attr('src', "{{ asset('img/icon/favorite.svg') }}");
+                        imgElement.attr('src', "{{ secure_asset('img/icon/favorite.svg') }}");
                         // pElement.css('color', '#b7b7b7');
                     }
                 },
