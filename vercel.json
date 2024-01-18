@@ -4,10 +4,15 @@
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/" },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
-        }
+        },
+        { "src":"/css/(.*)","dest":"/public/css/"},
+        { "src":"/js/(.*)","dest":"/public/js/"},
+        { "src":"/img/(.*)","dest":"/public/img/"}
+        
     ],
     "env": {
         "APP_NAME": "Laravel Vercel",
