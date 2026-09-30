@@ -1,0 +1,13 @@
+GitHub Repository: https://github.com/SyafiqSyech/FlowerShop/tree/main
+
+Saat Clone dari GitHub ataupun Download File Project:
+1. Pastikan sudah ada Xampp
+2. Nyalakan Apache dan MySql, simpan file project pada folder xampp/htdocs
+3. Buka Project pada VsCode
+4. Nyalakan terminal
+5. Jalankan command "composer install"
+6. Rename file env.example menjadi .env
+7. Jalankan command "composer require laravelcollective/html"
+8. Jalankan command "php artisan migrate"
+9. Jalankan command "php artisan db:seed --class=HerbsSeeder"
+10. Jalankan "php artisan serve" dan buka link localhost pada web
